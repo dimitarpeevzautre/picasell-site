@@ -674,44 +674,30 @@
             line-height: 1.7;
         }
 
-        .eu-co-funded {
-            display: inline-flex;
-            align-items: center;
-            gap: 0.75rem;
-            border: 1px solid rgba(255, 255, 255, 0.15);
-            padding: 0.5rem 0.75rem;
-            border-radius: 0.375rem;
-            background: rgba(255, 255, 255, 0.03);
-            margin-top: 0.5rem;
-        }
-
-        .eu-flag {
-            width: 38px;
-            height: 25.33px;
-            flex-shrink: 0;
-            border-radius: 2px;
-        }
-
-        .eu-text {
+        .eu-funding-section {
+            margin-top: 1.5rem;
             display: flex;
             flex-direction: column;
-            line-height: 1.15;
-            text-align: left;
+            gap: 0.75rem;
+            align-items: flex-start;
         }
 
-        .eu-text-top {
-            font-size: 0.625rem;
-            font-weight: 500;
+        .eu-funding-logo {
+            max-width: 100%;
+            height: auto;
+            max-height: 50px;
+            background: white;
+            padding: 0.35rem 0.5rem;
+            border-radius: 4px;
+            display: block;
+        }
+
+        .eu-funding-text {
+            font-size: 0.725rem !important;
             color: var(--gray-400);
-            text-transform: uppercase;
-            letter-spacing: 0.05em;
-        }
-
-        .eu-text-bottom {
-            font-size: 0.75rem;
-            font-weight: 700;
-            color: white;
-            letter-spacing: 0.02em;
+            line-height: 1.6;
+            margin-bottom: 0 !important;
+            text-align: left;
         }
 
         .footer-col h4 {
@@ -1100,31 +1086,9 @@
                 <div class="footer-brand">
                     <div class="logo">PICA<span>sell</span></div>
                     <p>Customizable recommerce infrastructure for retail brands. Grow your customer base, unlock new revenue, and lead the circular economy.</p>
-                    <div class="eu-co-funded">
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 810 540" class="eu-flag">
-                            <rect width="810" height="540" fill="#003399"/>
-                            <g fill="#FFCC00" transform="translate(405,270)">
-                                <g id="star">
-                                    <polygon points="0,-27 7.9,-8 25.6,-8 11.3,4.6 16.7,23 0,11.7 -16.7,23 -11.3,4.6 -25.6,-8 -7.9,-8"/>
-                                </g>
-                                <use href="#star" x="0" y="-180"/>
-                                <use href="#star" x="90" y="-155.9"/>
-                                <use href="#star" x="155.9" y="-90"/>
-                                <use href="#star" x="180" y="0"/>
-                                <use href="#star" x="155.9" y="90"/>
-                                <use href="#star" x="90" y="155.9"/>
-                                <use href="#star" x="0" y="180"/>
-                                <use href="#star" x="-90" y="155.9"/>
-                                <use href="#star" x="-155.9" y="90"/>
-                                <use href="#star" x="-180" y="0"/>
-                                <use href="#star" x="-155.9" y="-90"/>
-                                <use href="#star" x="-90" y="-155.9"/>
-                            </g>
-                        </svg>
-                        <div class="eu-text">
-                            <span class="eu-text-top">Co-funded by the</span>
-                            <span class="eu-text-bottom">European Union</span>
-                        </div>
+                    <div class="eu-funding-section">
+                        <img src="/header_logos_pkip_euflag_co-funded_BG.png" alt="Co-funded by the European Union - Competitiveness and Innovation in Enterprises Programme 2021-2027" class="eu-funding-logo">
+                        <p class="eu-funding-text">Co-funded by the European Union under the Competitiveness and Innovation in Enterprises Programme 2021-2027.</p>
                     </div>
                 </div>
                 <div class="footer-col">
